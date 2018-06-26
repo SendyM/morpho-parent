@@ -1,0 +1,24 @@
+server:
+  port: 9001
+  servlet-path: /
+
+logging:
+  level:
+    root: info
+  path: logs/
+  file: morpho-admin-server.log
+  
+spring:
+  boot:
+    admin:
+      monitor:
+        read-timeout: 10000
+        connect-timeout: 5000
+      notify:
+        mail:
+          to:
+          - help@max256.com
+      
+        
+        
+        
